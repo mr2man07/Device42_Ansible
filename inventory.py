@@ -183,7 +183,7 @@ def device_parser(data):
         zone_inv = zone_inventory(inventory, site, name, zone)
         inventory.update(zone_inv)
 
-        # Meta is for grouping host variables for Ansible
+        # Meta is for grouping host variables for Ansible. All vars from above will be put into this dict.
         host_vars = {'ansible_host': ip, 'ansible_network_os': os,'subdomain': subdomain, 
                      'environment': environment, 'zone': zone, 'model_number': model_number, 'serial_number': serial_number, 
                      'vendor': vendor, 'physical_name': physical_name, 'peer_node': peer_node, 'site': site}
