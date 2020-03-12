@@ -4,7 +4,7 @@ This is to parse Device42 CMDB information to create a dynamic inventory for Ans
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Use pip to install requirements that may not exist. This was written in Python 3.7.X
 
 ```bash
 pip install -r requirements.txt
