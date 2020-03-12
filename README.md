@@ -12,7 +12,8 @@ pip install -r requirements.txt
 
 ## Usage
 
-The script is intended for usage within Ansible Tower and ran as a one-time or scheduled task to update inventories.\n
+The script is intended for usage within Ansible Tower and ran as a one-time or scheduled task to update inventories.
+
 See [Custom Inventory Scripts](https://docs.ansible.com/ansible-tower/latest/html/administration/custom_inventory_script.html) for more information regarding the setup of the Ansible Tower side.
 
 ## Example output
