@@ -1,0 +1,48 @@
+{
+    "Devices": [
+        {
+            "ip_addresses": [
+                {
+                    "subnet_id": 2,
+                    "ip": "10.1.1.15",
+                    "label": "management",
+                    "type": 1,
+                    "subnet": "10.1.1.0/24"
+                }
+            ],
+            "serial_no": "ABC123468",
+            "custom_fields": [
+                {
+                    "notes": "What Zone does this device live in",
+                    "key": "AvailabilityZone",
+                    "value": "Z0"
+                },
+                {
+                    "notes": "Determines if device is Prod, UAT, DEV, etc",
+                    "key": "Environment",
+                    "value": "Production"
+                },
+                {
+                    "notes": "Indicates a nodes HA peer for Ansible to build HA configurations",
+                    "key": "PeerNode",
+                    "value": null
+                },
+                {
+                    "notes": null,
+                    "key": "SubDomain",
+                    "value": "DCTransit"
+                },
+                {
+                    "notes": null,
+                    "key": "PhysicalName",
+                    "value": null
+                }
+            ],
+            "hw_model": "ASR1001-HX",
+            "building": "S1",
+            "os": "ios-xe",
+            "name": "s1z0mldtrtc1n1",
+            "manufacturer": "Cisco"
+        }
+    ]
+}

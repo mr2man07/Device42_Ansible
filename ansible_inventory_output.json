@@ -1,0 +1,40 @@
+{
+   "s1": {
+      "hosts": [
+         "s1z0mldtrtc1n1"
+      ],
+      "z0": {
+         "hosts": [
+            "s1z0mldtrtc1n1"
+         ]
+      }
+   },
+   "all": {
+      "hosts": [
+         "s1z0mldtrtc1n1"
+      ]
+   },
+   "ios": {
+      "hosts": [
+         "s1z0mldtrtc1n1"
+
+      ]
+   },
+   "_meta": {
+      "hostvars": {
+         "s1z0mldtrtc1n1": {
+            "ansible_host": "10.1.1.15",
+            "ansible_network_os": "ios",
+            "subdomain": "DCTransit",
+            "environment": "multiple",
+            "zone": "z0",
+            "model_number": "asr1001-hx",
+            "serial_number": "ABC123468",
+            "vendor": "cisco",
+            "physical_name": null,
+            "peer_node": null,
+            "site": "s1"
+         }
+      }
+   }
+}
