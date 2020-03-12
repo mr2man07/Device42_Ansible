@@ -64,7 +64,7 @@ def all_inventory(inventory, name):
 
 def os_inventory(inventory, name, os):
     '''Requires the inventory dictionary as well as the os var created in device_parser. 
-    Creates the OS group structure which contains all hosts belonging to a certain OS (NXOS, F5), will be merged into original inventory dictionary'''
+    Creates the OS group structure which contains all hosts belonging to a certain OS (NXOS, F5)'''
 
     if os in inventory:
         if 'hosts' in inventory[os]:
@@ -83,7 +83,7 @@ def os_inventory(inventory, name, os):
 
 def zone_inventory(inventory, site, name, zone):
     '''Requires the inventory dictionary as well as the site, name and zone vars created in device_parser. 
-    Creates the Zone group structure which contains all hosts belonging to a certain Zone (Z0, Z1, etc), will be merged into original inventory dictionary'''
+    Creates the Zone group structure which contains all hosts belonging to a certain Zone (Z0, Z1, etc)'''
 
     if zone in inventory[site]:
         if 'hosts' in inventory[site][zone]:
@@ -184,8 +184,10 @@ def device_parser(data):
         inventory.update(zone_inv)
 
         # Meta is for grouping host variables for Ansible
-        host_vars = {'ansible_host': ip, 'ansible_network_os': os,
-                     'subdomain': subdomain, 'environment': environment, 'zone': zone, 'model_number': model_number, 'serial_number': serial_number, 'vendor': vendor, 'physical_name': physical_name, 'peer_node': peer_node, 'site': site}
+        host_vars = {'ansible_host': ip, 'ansible_network_os': os,'subdomain': subdomain, 
+                     'environment': environment, 'zone': zone, 'model_number': model_number, 'serial_number': serial_number, 
+                     'vendor': vendor, 'physical_name': physical_name, 'peer_node': peer_node, 'site': site}
+        
         meta_inv = meta_inventory(inventory, name, host_vars)
         inventory.update(meta_inv)
 
